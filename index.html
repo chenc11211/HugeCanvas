@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HugeCanvas</title>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+
+<div id="img_viewer">
+    <canvas id="origin_img" width="4000" height="2000" style="top: 0;left: 0"></canvas>
+</div>
+<div id="preview">
+    <img id="thumbnail" src="" alt="">
+    <div id="current_view" style="top: 0;left: 0;">
+    </div>
+</div>
+<div id="bar">
+    <label for="line_width">笔触:</label>
+    <select name="line_width" id="line_width">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+        <option value="15">15</option>
+        <option value="20">20</option>
+        <option value="50">50</option>
+    </select>
+    <span id="draw">绘制</span>
+    <button id="clear">清除</button>
+</div>
+<script src="js/index.js"></script>
+</body>
+</html>

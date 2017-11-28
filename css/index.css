@@ -1,0 +1,83 @@
+body,div{
+    margin: 0;
+    padding: 0;
+}
+#img_viewer{
+    width: 1000px;
+    height: 500px;
+    border: 1px solid #000;
+    overflow: hidden;
+    position: relative;
+    display: inline-block;
+    vertical-align: bottom;
+
+}
+#origin_img{
+    position: absolute;
+    cursor: move;
+}
+#origin_img.draw{
+    cursor: crosshair;
+}
+
+#preview{
+    border: 1px solid #000;
+    width: 200px;
+    height: 100px;
+    position: relative;
+    display: inline-block;
+    vertical-align: bottom;
+}
+#thumbnail{
+    max-width: 200px;
+    max-height: 100px;
+}
+#current_view{
+    width: 50px;
+    height: 25px;
+    box-sizing: border-box;
+    border: 1px solid #5bb058;
+    position: absolute;
+    left: 0;
+    top:0;
+}
+#line_width{
+    width: 50px;
+    height: 24px;
+    box-sizing: border-box;
+}
+#clear{
+    width: 50px;
+    height: 30px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    background: linear-gradient(#dedede, #c0c0c0);
+    cursor: pointer;
+    vertical-align: middle;
+    user-select: none;
+    -ms-user-select: none;
+}
+#clear:hover{
+    background: linear-gradient(#eeeeee, #d7d7d7);
+}
+#draw{
+    display: inline-block;
+    width: 50px;
+    height: 30px;
+    border-radius: 5px;
+    text-align: center;
+    line-height: 30px;
+    font-size: 14px;
+    color: #000000;
+    background: linear-gradient(#dedede, #c0c0c0);
+    cursor: pointer;
+    vertical-align: middle;
+    user-select: none;
+    -ms-user-select: none;
+}
+#draw.draw{
+    color: #ffffff;
+    background: linear-gradient(#3d457a, #202041);
+}
+
